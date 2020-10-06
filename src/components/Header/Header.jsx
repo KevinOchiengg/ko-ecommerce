@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
 import headerImage from '../../images/image1.png';
 import cart from '../../images/cart.png';
 import menu from '../../images/menu.png';
+import logo from '../../images/logo.png';
 import './Header.css';
 
 const Header = () => {
@@ -10,7 +10,9 @@ const Header = () => {
     <header className='header'>
       <div className='container'>
         <div className='navbar'>
-          <Logo />
+          <div className='logo'>
+            <img src={logo} alt='ReadStore' style={{ width: '125px' }} />
+          </div>
           <nav>
             <ul>
               <li>

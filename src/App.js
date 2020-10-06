@@ -6,20 +6,29 @@ import FeaturedProduct from './components/FeaturedProduct/FeaturedProduct';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import LatestProduct from './components/LatestProduct/LatestProduct';
+import ProductPage from './components/Pages/ProductPage/ProductPage';
 import Testimonial from './components/Testimonial/Testimonial';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
+import Home from './components/Pages/ProductPage/Home/Home';
 
 const App = () => {
   return (
-    <main>
-      <Header />
-      <FeaturedCategories />
-      <FeaturedProduct />
-      <LatestProduct />
-      <ExclusiveProduct />
-      <Testimonial />
-      <Brand />
-      <Footer />
-    </main>
+    <Router>
+      <>
+        <Switch>
+          <Route path='/home' component={Home} />
+          <Route exact path='/'>
+            <Redirect to='/home' />
+          </Route>
+          <Route path='/products' component={ProductPage} />
+        </Switch>
+      </>
+    </Router>
   );
 };
 
