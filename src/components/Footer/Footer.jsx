@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logoWhite from '../../images/logo-white.png';
 import './Footer.css';
 
@@ -13,7 +14,10 @@ const Footer = () => {
           </div>
 
           <div className='footer-col-2'>
-            <img src={logoWhite} alt='' />
+            <Link to='productdetails'>
+              <img src={logoWhite} alt='logo' />
+            </Link>
+
             <p>
               Our purpose Is To Sustainably Make the pleasure and Benefits of
               Sports Accessible to the Many
@@ -39,7 +43,9 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p className='copyright'>Copyright 2020 - K&O Technologies</p>
+        <p className='copyright'>
+          Copyright 2020 - powered by K&O Technologies
+        </p>
       </div>
     </div>
   );

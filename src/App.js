@@ -1,33 +1,31 @@
 import React from 'react';
-import Brand from './components/Brand/Brand';
-import ExclusiveProduct from './components/ExclusiveProduct/ExclusiveProduct';
-import FeaturedCategories from './components/FeaturedCategories/FeaturedCategories';
-import FeaturedProduct from './components/FeaturedProduct/FeaturedProduct';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import LatestProduct from './components/LatestProduct/LatestProduct';
 import ProductPage from './components/Pages/ProductPage/ProductPage';
-import Testimonial from './components/Testimonial/Testimonial';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
-import Home from './components/Pages/ProductPage/Home/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AccountPage from './components/Pages/AccountPage/AccountPage';
+import HomePage from './components/Pages/HomePage/HomePage';
+import ShoppingCart from './components/Pages/ShoppingCart/ShoppingCart';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 const App = () => {
   return (
     <Router>
-      <>
-        <Switch>
-          <Route path='/home' component={Home} />
-          <Route exact path='/'>
-            <Redirect to='/home' />
-          </Route>
-          <Route path='/products' component={ProductPage} />
-        </Switch>
-      </>
+      <Switch>
+        <Route path='/products'>
+          <ProductPage />
+        </Route>
+        <Route path='/account'>
+          <AccountPage />
+        </Route>
+        <Route path='/cart'>
+          <ShoppingCart />
+        </Route>
+        <Route path='/productdetails'>
+          <ProductDetails />
+        </Route>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
+      </Switch>
     </Router>
   );
 };

@@ -9,6 +9,7 @@ import product5 from '../../images/product-5.jpg';
 import product6 from '../../images/product-6.jpg';
 import product7 from '../../images/product-7.jpg';
 import product8 from '../../images/product-8.jpg';
+import { Link } from 'react-router-dom';
 
 const LatestProduct = () => {
   return (
@@ -16,7 +17,9 @@ const LatestProduct = () => {
       <h2 className='title'>Latest Products</h2>
       <div className='row'>
         <div className='col-4'>
-          <img src={product1} alt='' />
+          <Link to='productdetails'>
+            <img src={product1} alt='' />
+          </Link>
           <h4>Red Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -38,7 +41,9 @@ const LatestProduct = () => {
           <p>$50.00</p>
         </div>
         <div className='col-4'>
-          <img src={product2} alt='' />
+          <Link to='productdetails'>
+            <img src={product2} alt='' />
+          </Link>
           <h4>Black shoes</h4>
           <div className='rating'>
             <i>
@@ -60,7 +65,9 @@ const LatestProduct = () => {
           <p>$10.00</p>
         </div>
         <div className='col-4'>
-          <img src={product3} alt='' />
+          <Link to='productdetails'>
+            <img src={product3} alt='' />
+          </Link>
           <h4>Grey Trouser</h4>
           <div className='rating'>
             <i>
@@ -82,7 +89,9 @@ const LatestProduct = () => {
           <p>$40.00</p>
         </div>
         <div className='col-4'>
-          <img src={product4} alt='' />
+          <Link to='productdetails'>
+            <img src={product4} alt='' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -104,7 +113,9 @@ const LatestProduct = () => {
           <p>$20.00</p>
         </div>
         <div className='col-4'>
-          <img src={product5} alt='' />
+          <Link to='productdetails'>
+            <img src={product5} alt='' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -126,7 +137,9 @@ const LatestProduct = () => {
           <p>$20.00</p>
         </div>
         <div className='col-4'>
-          <img src={product6} alt='' />
+          <Link to='productdetails'>
+            <img src={product6} alt='' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -148,7 +161,9 @@ const LatestProduct = () => {
           <p>$20.00</p>
         </div>
         <div className='col-4'>
-          <img src={product7} alt='' />
+          <Link to='productdetails'>
+            <img src={product7} alt='' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -170,7 +185,9 @@ const LatestProduct = () => {
           <p>$20.00</p>
         </div>
         <div className='col-4'>
-          <img src={product8} alt='' />
+          <Link to='productdetails'>
+            <img src={product8} alt='' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>

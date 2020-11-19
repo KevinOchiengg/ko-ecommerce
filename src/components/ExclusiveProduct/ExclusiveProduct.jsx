@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import offer from '../../images/exclusive.png';
 import './ExclusiveProduct.css';
 
@@ -8,7 +9,9 @@ const ExclusiveProduct = () => {
       <div className='small-container'>
         <div className='row'>
           <div className='col-2'>
-            <img src={offer} alt='' className='offer-img' />
+            <Link to='/productdetails'>
+              <img src={offer} alt='' className='offer-img' />
+            </Link>
           </div>
           <div className='col-2'>
             <p>Exclusive Available on RedStore</p>
@@ -18,9 +21,9 @@ const ExclusiveProduct = () => {
               color full-touch display with adjustable brightness, so everything
               is clear as can be.
             </small>
-            <a href='' className='btn'>
+            <Link to='productdetails' className='btn'>
               Buy Now &#8594;
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import product1 from '../../images/product-1.jpg';
 import product2 from '../../images/product-2.jpg';
 import product3 from '../../images/product-3.jpg';
@@ -12,7 +13,9 @@ function FeaturedProduct() {
       <h2 className='title'>Featured Products</h2>
       <div className='row'>
         <div className='col-4'>
-          <img src={product1} alt='' />
+          <Link to='productdetails'>
+            <img src={product1} alt='product' />
+          </Link>
           <h4>Red Printed T-shirt</h4>
           <div className='rating'>
             <i>
@@ -34,7 +37,9 @@ function FeaturedProduct() {
           <p>$50.00</p>
         </div>
         <div className='col-4'>
-          <img src={product2} alt='' />
+          <Link to='productdetails'>
+            <img src={product2} alt='product' />
+          </Link>
           <h4>Black shoes</h4>
           <div className='rating'>
             <i>
@@ -56,7 +61,9 @@ function FeaturedProduct() {
           <p>$10.00</p>
         </div>
         <div className='col-4'>
-          <img src={product3} alt='' />
+          <Link to='productdetails'>
+            <img src={product3} alt='product' />
+          </Link>
           <h4>Grey Trouser</h4>
           <div className='rating'>
             <i>
@@ -78,7 +85,9 @@ function FeaturedProduct() {
           <p>$40.00</p>
         </div>
         <div className='col-4'>
-          <img src={product4} alt='' />
+          <Link to='productdetails'>
+            <img src={product4} alt='product' />
+          </Link>
           <h4>Blue Printed T-shirt</h4>
           <div className='rating'>
             <i>

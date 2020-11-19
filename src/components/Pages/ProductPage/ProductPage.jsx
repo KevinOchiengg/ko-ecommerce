@@ -1,17 +1,20 @@
 import React from 'react';
-import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
+import { FaStarHalfAlt } from 'react-icons/fa';
 import product1 from '../../../images/product-1.jpg';
 import product2 from '../../../images/product-2.jpg';
 import product3 from '../../../images/product-3.jpg';
 import product4 from '../../../images/product-4.jpg';
-import Navigation from '../../Navigation/Navigation';
+import Product from '../../../Product/Product';
 import Footer from '../../Footer/Footer';
+import Navbar from '../../Navbar/Navbar';
+import Sidebar from '../../Sidebar/Sidebar';
 import './ProductPage.css';
 
 const ProductPage = () => {
   return (
     <>
-      <Navigation />
+      <Navbar />
+      <Sidebar />
       <div className='row row-2'>
         <h2>All Products</h2>
         <select>
@@ -24,275 +27,66 @@ const ProductPage = () => {
       </div>
       <div className='small-container'>
         <div className='row'>
-          <div className='col-4'>
-            <img src={product1} alt='' />
-            <h4>Red Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$50.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product2} alt='' />
-            <h4>Black shoes</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$10.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product3} alt='' />
-            <h4>Grey Trouser</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$40.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product4} alt='' />
-            <h4>Blue Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$20.00</p>
-          </div>
-        </div>{' '}
-        <div className='row'>
-          <div className='col-4'>
-            <img src={product1} alt='' />
-            <h4>Red Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$50.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product2} alt='' />
-            <h4>Black shoes</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$10.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product3} alt='' />
-            <h4>Grey Trouser</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$40.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product4} alt='' />
-            <h4>Blue Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$20.00</p>
-          </div>
-        </div>{' '}
-        <div className='row'>
-          <div className='col-4'>
-            <img src={product1} alt='' />
-            <h4>Red Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$50.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product2} alt='' />
-            <h4>Black shoes</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$10.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product3} alt='' />
-            <h4>Grey Trouser</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$40.00</p>
-          </div>
-          <div className='col-4'>
-            <img src={product4} alt='' />
-            <h4>Blue Printed T-shirt</h4>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <p>$20.00</p>
-          </div>
+          <Product
+            image={product1}
+            title='Red T-shirt'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={10}
+          />
+          <Product
+            image={product2}
+            title='Black shoes'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={20}
+          />
+          <Product
+            image={product3}
+            title='Grey Trouser'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={15}
+          />
+          <Product
+            image={product4}
+            title='Blue Printed T-shirt'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={10}
+          />
         </div>
+        <div className='row'>
+          <Product
+            image={product1}
+            title='Red T-shirt'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={10}
+          />
+          <Product
+            image={product3}
+            title='Grey Trouser'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={15}
+          />
+          <Product
+            image={product1}
+            title='Red T-shirt'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={10}
+          />
+          <Product
+            image={product3}
+            title='Grey Trouser'
+            rating={4}
+            halfstar={<FaStarHalfAlt />}
+            price={15}
+          />
+        </div>
+
         <div className='page-btn'>
           <span>1</span>
           <span>2</span>
