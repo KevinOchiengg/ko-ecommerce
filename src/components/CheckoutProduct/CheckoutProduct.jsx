@@ -1,10 +1,6 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
-// import product1 from '../../../images/product-1.jpg';
-import product2 from '../../images/product-2.jpg';
 import { useStateValue } from '../../StateProvider';
-// import product3 from '../../../images/product-3.jpg';
-// import product4 from '../../../images/product-4.jpg';
 
 const CheckoutProduct = ({ id, price, rating, value, title, image }) => {
   const [{ basket }, dispatch] = useStateValue();

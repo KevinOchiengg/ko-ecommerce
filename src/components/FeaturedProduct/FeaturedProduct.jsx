@@ -1,10 +1,10 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import product1 from '../../images/product-1.jpg';
-import product2 from '../../images/product-2.jpg';
-import product3 from '../../images/product-3.jpg';
-import product4 from '../../images/product-4.jpg';
+import product1 from '../../images/product-1.png';
+import product2 from '../../images/product-2.png';
+import product3 from '../../images/product-3.png';
+import product4 from '../../images/product-4.png';
 import './FeaturedProduct.css';
 
 function FeaturedProduct() {

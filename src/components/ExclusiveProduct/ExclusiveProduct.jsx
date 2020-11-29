@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import offer from '../../images/exclusive.png';
+import offer from '../../images/gallery-4.png';
 import './ExclusiveProduct.css';
 
 const ExclusiveProduct = () => {
@@ -15,7 +15,7 @@ const ExclusiveProduct = () => {
           </div>
           <div className='col-2'>
             <p>Exclusive Available on RedStore</p>
-            <h1>Smart Band 4</h1>
+            <h1>Dope Hood</h1>
             <small>
               The Mi Smart 4 features a 39.9% larger (than Mi Band 3) AMOLED
               color full-touch display with adjustable brightness, so everything

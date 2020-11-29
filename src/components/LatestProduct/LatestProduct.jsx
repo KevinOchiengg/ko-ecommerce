@@ -1,14 +1,14 @@
 import React from 'react';
 import './LatestProduct.css';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
-import product1 from '../../images/product-1.jpg';
-import product2 from '../../images/product-2.jpg';
-import product3 from '../../images/product-3.jpg';
-import product4 from '../../images/product-4.jpg';
-import product5 from '../../images/product-5.jpg';
-import product6 from '../../images/product-6.jpg';
-import product7 from '../../images/product-7.jpg';
-import product8 from '../../images/product-8.jpg';
+import product1 from '../../images/product-1.png';
+import product2 from '../../images/gallery-2.jpg';
+import product3 from '../../images/product-3.png';
+import product4 from '../../images/product-9.jpg';
+import product5 from '../../images/product-5.png';
+import product6 from '../../images/product-6.png';
+import product7 from '../../images/product-11.png';
+import product8 from '../../images/product-10.jpg';
 import { Link } from 'react-router-dom';
 
 const LatestProduct = () => {

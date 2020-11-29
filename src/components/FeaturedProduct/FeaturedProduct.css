@@ -27,7 +27,7 @@
 
 .title::after {
   content: '';
-  background: #ff523b;
+  background: rgb(248, 127, 127);
   height: 5px;
   width: 80px;
   border-radius: 5px;
@@ -47,7 +47,7 @@ h4 {
 }
 
 .rating i {
-  color: #ff523b;
+  color: rgb(248, 127, 127);
 }
 
 .col-4:hover {

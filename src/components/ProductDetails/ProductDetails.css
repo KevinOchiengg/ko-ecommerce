@@ -30,7 +30,7 @@
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #ff523b;
+  border: 1px solid  rgb(248, 127, 127);;
 }
 
 input:focus {
@@ -38,7 +38,7 @@ input:focus {
 }
 
 .single__product h3 i {
-  color: #ff523b;
+  color:  rgb(248, 127, 127);;
 }
 
 .small__img__row {

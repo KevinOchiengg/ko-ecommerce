@@ -4,13 +4,21 @@ import { useGlobalContext } from '../../context';
 import cart from '../../images/cart.png';
 import menu from '../../images/menu.png';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { useStateValue } from '../../StateProvider';
+import { auth } from '../../firebase';
 
 const Navbar = () => {
+  const history = useHistory();
   const { openSidebar } = useGlobalContext();
   const { checkActive } = useGlobalContext();
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return (
     <nav className='nav'>
@@ -46,32 +54,37 @@ const Navbar = () => {
               activeClassName='active'
               isActive={checkActive}
             >
-              Account
+              Profile
             </NavLink>
           </li>
         </ul>
-        <img
-          src={menu}
-          alt='menu'
-          className='toggle-btn'
-          style={{ width: '30px', height: '30px' }}
-          onClick={openSidebar}
-        />
+
         <div className='right__item'>
-          <NavLink to='/Account'>
-            <button className='signin-btn'>Sign up</button>
+          <NavLink to={!user && '/Account'}>
+            <button className='signin-btn' onClick={handleAuthentication}>
+              {user ? 'Log out' : 'Log in'}
+            </button>
           </NavLink>
-          <NavLink to='/Account'>
-            <button className='signin-btn'>Sign up</button>
-          </NavLink>
+
           <div className='nav-container'>
-            <NavLink to='/Cart'>
-              <img src={cart} alt='cart' className='cart' />
-            </NavLink>
+            <img
+              src={cart}
+              alt='cart'
+              className='cart'
+              onClick={(e) => history.push('/Cart')}
+            />
+
             <div className='amount-container'>
-              <p className='total-amount'>{basket?.length}</p>
+              <p>{basket?.length}</p>
             </div>
           </div>
+          <img
+            src={menu}
+            alt='menu'
+            className='toggle-btn'
+            style={{ width: '30px', height: '30px' }}
+            onClick={openSidebar}
+          />
         </div>
       </div>
     </nav>

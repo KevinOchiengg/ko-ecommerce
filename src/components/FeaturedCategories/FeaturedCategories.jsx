@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import category1 from '../../images/category-1.jpg';
-import category2 from '../../images/category-2.jpg';
-import category3 from '../../images/category-3.jpg';
+import category1 from '../../images/product-7.png';
+import category2 from '../../images/product-5.png';
+import category3 from '../../images/product-6.png';
 import './FeaturedCategories.css';
 
 const FeaturedCategories = () => {
