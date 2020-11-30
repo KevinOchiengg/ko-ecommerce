@@ -82,7 +82,7 @@ const Navbar = () => {
             src={menu}
             alt='menu'
             className='toggle-btn'
-            style={{ width: '30px', height: '30px' }}
+            style={{ width: '20px', height: '20px' }}
             onClick={openSidebar}
           />
         </div>

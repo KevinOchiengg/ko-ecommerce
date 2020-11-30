@@ -33,7 +33,7 @@ Stripe Styles
 .nav {
   background: #fff;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,8 +60,9 @@ Stripe Styles
 }
 
 .cart {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .nav-header {
@@ -87,23 +88,18 @@ Stripe Styles
   height: 100%;
 }
 
-.signin-btn,
-.cart {
-  margin: 0 10px;
-}
-
 .nav-container {
-  display: block;
+  display: flex;
   position: relative;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .amount-container {
   position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  top: -0.6rem;
+  right: -0.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   background: hsl(360, 71%, 66%);
   display: flex;
@@ -112,10 +108,11 @@ Stripe Styles
 }
 .amount-container p {
   color: #fff;
+  font-size: 10px;
 }
 
 .signin-btn {
-  font-size: 1rem;
+  font-size: 0.6rem;
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   border-color: transparent;
@@ -124,6 +121,7 @@ Stripe Styles
   cursor: pointer;
   transition: all 0.3s linear;
   outline: none;
+  margin-right: 10px;
 }
 
 .signin-btn:hover {
@@ -142,8 +140,32 @@ Stripe Styles
     margin-right: 20px;
     display: none;
   }
+
   .signin-btn {
-    display: inline-block;
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    color: white;
+    background: hsl(360, 71%, 66%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    outline: none;
+  }
+  .cart {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+  .amount-container {
+    position: absolute;
+    top: -0.5rem;
+    right: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .amount-container p {
+    font-size: 15px;
   }
   .nav-links {
     display: flex;
