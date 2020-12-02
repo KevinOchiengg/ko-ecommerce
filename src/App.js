@@ -9,6 +9,7 @@ import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
 
 const promise = loadStripe(
   'pk_test_51Hrf8PJNLaQB7IjEatkaccHHfMuozeQvdwLEHiNNtrqSaJTuV305bDdCqnYrFszE4QyxDa8w2gUh4VkJrmaMc5zd00AAKciwe5'
@@ -34,6 +35,9 @@ const App = () => {
   return (
     <Router>
       <Switch>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
         <Route path='/products'>
           <ProductPage />
         </Route>
@@ -48,8 +52,8 @@ const App = () => {
         <Route path='/productdetails'>
           <ProductDetails />
         </Route>
-        <Route exact path='/'>
-          <HomePage />
+        <Route path='*'>
+          <ErrorPage />
         </Route>
       </Switch>
     </Router>

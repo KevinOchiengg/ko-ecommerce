@@ -33,10 +33,10 @@ const ShoppingCart = () => {
     };
     getClientSecret();
   }, [basket]);
-  console.log('secret client', clientSecret);
+  console.log('secret client +++++', clientSecret);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setProcessing(true);
 
     const payload = await stripe
@@ -53,9 +53,9 @@ const ShoppingCart = () => {
       });
   };
 
-  const handleChange = (e) => {
-    setDisabled(e.empty);
-    setError(e.error ? e.error.message : '');
+  const handleChange = (event) => {
+    setDisabled(event.empty);
+    setError(event.error ? event.error.message : '');
   };
   return (
     <>
@@ -122,7 +122,7 @@ const ShoppingCart = () => {
           </tbody>
         </table>
         <form onSubmit={handleSubmit}>
-          <CardElement onChange={handleChange} />{' '}
+          <CardElement onChange={handleChange} />
           <div className='total-price'>
             <CurrencyFormat
               renderText={(value) => (

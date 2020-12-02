@@ -10,7 +10,7 @@ const Header = () => {
         <div className='row'>
           <div className='hero__text col-2'>
             <h1>
-              Give Your Workout <br />A New Style!
+              Give Your Swag <br />A New Look!
             </h1>
             <p>
               Success isn't always about greatness. It's about consistency{' '}

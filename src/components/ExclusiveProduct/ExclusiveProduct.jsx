@@ -14,12 +14,12 @@ const ExclusiveProduct = () => {
             </Link>
           </div>
           <div className='col-2'>
-            <p>Exclusive Available on RedStore</p>
+            <p>Exclusive Available on Looqu store</p>
             <h1>Dope Hood</h1>
             <small>
-              The Mi Smart 4 features a 39.9% larger (than Mi Band 3) AMOLED
-              color full-touch display with adjustable brightness, so everything
-              is clear as can be.
+              Move the swag way (rebrand yourself) AMOLED color full-touch
+              display with adjustable brightness, so everything is clear as can
+              be.
             </small>
             <Link to='productdetails' className='btn'>
               Buy Now &#8594;

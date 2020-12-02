@@ -50,9 +50,9 @@ Stripe Styles
 }
 
 .nav-logo {
-  width: 130px;
-  margin-left: 20px;
+  width: 160px;
   object-fit: contain;
+  margin-left: -10px;
 }
 
 .toggle-btn {
@@ -108,11 +108,11 @@ Stripe Styles
 }
 .amount-container p {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .signin-btn {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   border-color: transparent;
@@ -141,6 +141,11 @@ Stripe Styles
     display: none;
   }
 
+  .nav-logo {
+    width: 200px;
+    object-fit: contain;
+  }
+
   .signin-btn {
     font-size: 1rem;
     padding: 0.25rem 0.75rem;
@@ -154,8 +159,8 @@ Stripe Styles
   }
   .cart {
     margin-right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
   .amount-container {
     position: absolute;
