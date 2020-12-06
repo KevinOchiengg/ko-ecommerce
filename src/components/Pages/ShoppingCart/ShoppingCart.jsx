@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Footer from '../../Footer/Footer';
 import './ShoppingCart.css';
-import Navbar from '../../Navbar/Navbar';
-import Sidebar from '../../Sidebar/Sidebar';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from '../../../StateProvider';
 import { getBasketTotal } from '../../../reducer';
 import CheckoutProduct from '../../CheckoutProduct/CheckoutProduct';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import Axios from 'axios';
+import EmptyCart from '../../EmptyCart/EmptyCart';
 
 const ShoppingCart = () => {
   const [{ basket }] = useStateValue();
@@ -57,10 +56,10 @@ const ShoppingCart = () => {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : '');
   };
+
+  if (basket.length < 1) return <EmptyCart />;
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <div className='small-container cart-page'>
         <table>
           <tbody>

@@ -10,6 +10,9 @@ import { useStateValue } from './StateProvider';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
+import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import Product from './components/Product/Product';
 
 const promise = loadStripe(
   'pk_test_51Hrf8PJNLaQB7IjEatkaccHHfMuozeQvdwLEHiNNtrqSaJTuV305bDdCqnYrFszE4QyxDa8w2gUh4VkJrmaMc5zd00AAKciwe5'
@@ -34,6 +37,8 @@ const App = () => {
   }, []);
   return (
     <Router>
+      <Navbar />
+      <Sidebar />
       <Switch>
         <Route exact path='/'>
           <HomePage />
@@ -51,6 +56,9 @@ const App = () => {
         </Route>
         <Route path='/productdetails'>
           <ProductDetails />
+        </Route>
+        <Route exact path='/products'>
+          <Product />
         </Route>
         <Route path='*'>
           <ErrorPage />

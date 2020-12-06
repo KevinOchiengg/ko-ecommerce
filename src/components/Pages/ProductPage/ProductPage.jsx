@@ -4,7 +4,7 @@ import product1 from '../../../images/product-1.png';
 import product2 from '../../../images/product-2.png';
 import product3 from '../../../images/product-3.png';
 import product4 from '../../../images/product-4.png';
-import Product from '../../../Product/Product';
+import Product from '../../Product/Product';
 import Footer from '../../Footer/Footer';
 import Navbar from '../../Navbar/Navbar';
 import Sidebar from '../../Sidebar/Sidebar';

@@ -49,12 +49,12 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to='/Account'
+              to='/cart'
               className='link-btn'
               activeClassName='active'
               isActive={checkActive}
             >
-              Profile
+              Checkout
             </NavLink>
           </li>
         </ul>

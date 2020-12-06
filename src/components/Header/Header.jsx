@@ -13,7 +13,7 @@ const Header = () => {
               Give Your Swag <br />A New Look!
             </h1>
             <p>
-              Success isn't always about greatness. It's about consistency{' '}
+              Success isn't always about greatness. It's about consistency
               <br />
               hard work gains success. Greatness will come
             </p>

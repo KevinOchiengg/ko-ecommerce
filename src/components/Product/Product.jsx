@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useStateValue } from '../StateProvider';
+import { useStateValue } from '../../StateProvider';
 
 const Product = ({ image, title, rating, button, halfstar, price }) => {
   const [{ basket }, dispatch] = useStateValue();

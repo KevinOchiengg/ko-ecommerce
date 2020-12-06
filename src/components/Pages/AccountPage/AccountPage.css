@@ -47,6 +47,7 @@ form .btn {
   border: none;
   cursor: pointer;
   margin: 10px 0;
+  outline: none;
 }
 
 form .btn:focus {
@@ -67,7 +68,7 @@ form a {
 #indicator {
   width: 100px;
   border: none;
-  background:  rgb(248, 127, 127);;
+  background: rgb(248, 127, 127);
   height: 3px;
   margin-top: 8px;
   transform: translate(100px);
