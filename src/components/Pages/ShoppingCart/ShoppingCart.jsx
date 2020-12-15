@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Footer from '../../Footer/Footer';
 import './ShoppingCart.css';
 import CurrencyFormat from 'react-currency-format';

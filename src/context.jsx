@@ -6,6 +6,8 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const [loginForm, setLoginForm] = useState(true);
+  const [registerForm, setRegisterForm] = useState(false);
 
   const openSidebar = () => {
     setIsSidebarOpen(true);
@@ -26,6 +28,10 @@ const AppProvider = ({ children }) => {
         closeSidebar,
         isActive,
         checkActive,
+        loginForm,
+        setLoginForm,
+        registerForm,
+        setRegisterForm,
       }}
     >
       {children}

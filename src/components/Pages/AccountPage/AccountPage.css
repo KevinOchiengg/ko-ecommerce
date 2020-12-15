@@ -32,6 +32,7 @@
   padding: 0 20px;
   position: absolute;
   top: 130px;
+  transition: transform 1s;
 }
 
 form input {
@@ -54,22 +55,43 @@ form .btn:focus {
   outline: none;
 }
 
-#login-form {
-  left: -300px;
+.login-form {
+  transition: transform 1s;
+  transform: translate(0px);
 }
 
-#reg-form {
-  left: 0;
+.login-form-show {
+  display: none;
+  transition: transform 1s;
+  transform: translate(300px);
 }
+
+.reg-form {
+  display: none;
+  transition: transform 1s;
+  transform: translate(300px);
+}
+
+.reg-form-show {
+  display: block;
+  transition: transform 1s;
+  transform: translate(0px);
+}
+
 form a {
   font-size: 12px;
 }
 
-#indicator {
+.indicator {
   width: 100px;
   border: none;
   background: rgb(248, 127, 127);
   height: 3px;
   margin-top: 8px;
+  transform: translate(0px);
+  transition: transform 0.5s;
+}
+
+.show-indicator {
   transform: translate(100px);
 }
