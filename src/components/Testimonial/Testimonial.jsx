@@ -1,109 +1,69 @@
-import React from 'react';
-import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
-import userOne from '../../images/user-1.png';
-import userTwo from '../../images/user-2.png';
-import userThree from '../../images/user-3.png';
+import React, { useState, useEffect } from 'react';
+import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
+import { FaQuoteRight } from 'react-icons/fa';
+import data from './TestimonialData';
 import './Testimonial.css';
 
 function Testimonial() {
+  const [people, setPeople] = useState(data);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const lastIndex = people.length - 1;
+    if (index < 0) {
+      setIndex(lastIndex);
+    }
+    if (index > lastIndex) {
+      setIndex(0);
+    }
+  }, [index, people]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 3000);
+    return () => clearInterval(slider);
+  }, [index]);
+
   return (
-    <div className='testimonial'>
-      <div className='small-container'>
-        <div className='row'>
-          <div className='col-3'>
-            <i className='quote'>
-              <FaStar />
-            </i>
+    <section className='section'>
+      <h2 className='title'>Featured Products</h2>
+      <div className='section-center'>
+        {people.map((person, personIndex) => {
+          const { id, image, name, title, quote } = person;
 
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-              placeat mollitia porro excepturi ab repellendus eligendi quos
-              impedit tempore? Quae?
-            </p>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <img src={userOne} alt='' />
-            <h3>Kevin Ochieng</h3>
-          </div>
+          let position = 'nextSlide';
+          if (personIndex === index) {
+            position = 'activeSlide';
+          }
 
-          <div className='col-3'>
-            <i className='quote'>
-              <FaStar />
-            </i>
+          if (
+            personIndex === index - 1 ||
+            (index === 0 && personIndex === people.length - 1)
+          ) {
+            position = 'lastSlide';
+          }
 
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-              placeat mollitia porro excepturi ab repellendus eligendi quos
-              impedit tempore? Quae?
-            </p>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <img src={userTwo} alt='' />
-            <h3>Kevin Ochieng</h3>
-          </div>
-          <div className='col-3'>
-            <i className='quote'>
-              <FaStar />
-            </i>
+          return (
+            <article className={position} key={id}>
+              <img src={image} alt={name} className='person-img' />
+              <h4>{name}</h4>
+              <p className='profesion'>{title}</p>
+              <p className='text'>{quote}</p>
+              <FaQuoteRight className='icon' />
+            </article>
+          );
+        })}
 
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-              placeat mollitia porro excepturi ab repellendus eligendi quos
-              impedit tempore? Quae?
-            </p>
-            <div className='rating'>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStar />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-              <i>
-                <FaStarHalfAlt />
-              </i>
-            </div>
-            <img src={userThree} alt='' />
-            <h3>Kevin Ochieng</h3>
-          </div>
-        </div>
+        <button className='prev' onClick={() => setIndex(index - 1)}>
+          <FiChevronLeft />
+        </button>
+
+        <button className='next' onClick={() => setIndex(index + 1)}>
+          <FiChevronRight />
+        </button>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -10,14 +10,11 @@ const Header = () => {
         <div className='row'>
           <div className='hero__text col-2'>
             <h1>
-              Give Your Swag <br />A New Look!
+              Switch Your Swag <br />
+              Mode On
             </h1>
-            <p>
-              Success isn't always about greatness. It's about consistency
-              <br />
-              hard work gains success. Greatness will come
-            </p>
-            <Link to='products' className='btn'>
+            <p>Dress like you already famous</p>
+            <Link to='/products' className='btn'>
               Explore Now &#8594;
             </Link>
           </div>

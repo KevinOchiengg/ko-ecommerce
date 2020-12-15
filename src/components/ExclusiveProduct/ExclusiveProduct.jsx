@@ -15,16 +15,15 @@ const ExclusiveProduct = () => {
           </div>
           <div className='col-2'>
             <p>Exclusive Available on Looqu store</p>
-            <h1>Dope Hood</h1>
+            <h1>Printed Hoodie</h1>
             <small>
-              Move the swag way (rebrand yourself) AMOLED color full-touch
-              display with adjustable brightness, so everything is clear as can
-              be.
+              Men / Women Singer Hooded Sweatshirts Plus Size Unisex Pollover3D
+              Printed Hoodie
             </small>
-            <Link to='productdetails' className='btn'>
-              Buy Now &#8594;
-            </Link>
           </div>
+          <Link to='productdetails' className='btn'>
+            Buy Now &#8594;
+          </Link>
         </div>
       </div>
     </div>

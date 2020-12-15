@@ -34,22 +34,9 @@
   margin: 25px 0;
 }
 
-.btn {
-  display: inline-block;
-  background: rgb(248, 127, 127);
-  color: #fff;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-  transition: background 0.5s;
-}
-
-.btn:hover {
-  background: rgb(248, 127, 127);
-}
 .header {
   width: 100%;
-  background: radial-gradient(#fff, rgb(248, 127, 127));
+  background: radial-gradient(#fff, rgb(253, 208, 208));
 }
 
 .header .row {

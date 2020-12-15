@@ -44,7 +44,13 @@ td img {
 
 .total-price {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 620px;
+}
+
+.checkout-btn {
+  text-align: center;
 }
 
 .total-price table {

@@ -38,6 +38,7 @@ const CheckoutProduct = ({ id, price, rating, value, title, image }) => {
         </td>
         <td>${price}</td>
       </tr>
+      <button className='btn'>Checkout</button>
     </>
   );
 };

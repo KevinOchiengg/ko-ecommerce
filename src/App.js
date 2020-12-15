@@ -13,6 +13,8 @@ import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Product from './components/Product/Product';
+import Payment from './components/Pages/Payment/Payment';
+import { products } from './data';
 
 const promise = loadStripe(
   'pk_test_51Hrf8PJNLaQB7IjEatkaccHHfMuozeQvdwLEHiNNtrqSaJTuV305bDdCqnYrFszE4QyxDa8w2gUh4VkJrmaMc5zd00AAKciwe5'
@@ -52,6 +54,11 @@ const App = () => {
         <Route path='/cart'>
           <Elements stripe={promise}>
             <ShoppingCart />
+          </Elements>
+        </Route>
+        <Route path='/payment'>
+          <Elements stripe={promise}>
+            <Payment />
           </Elements>
         </Route>
         <Route path='/productdetails'>

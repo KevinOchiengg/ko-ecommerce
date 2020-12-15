@@ -1,35 +1,3 @@
-/*
-=============== 
-Variables
-===============
-*/
-
-:root {
-  --clr-white: #fff;
-  --clr-red-dark: hsl(360, 67%, 44%);
-  --clr-red-light: hsl(360, 71%, 66%);
-  --clr-green-dark: hsl(125, 67%, 44%);
-  --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-  --spacing: 0.1rem;
-  --radius: 0.25rem;
-  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
-}
-/*
-=============== 
-Global Styles
-===============
-*/
-
-/*
-=============== 
-Stripe Styles
-===============
-*/
 .nav {
   background: #fff;
   width: 100%;
@@ -79,10 +47,6 @@ Stripe Styles
   height: 100%;
 }
 
-.btn:hover {
-  background: hsl(360, 67%, 44%);
-}
-
 .nav-links {
   display: none;
   height: 100%;
@@ -117,7 +81,7 @@ Stripe Styles
   border-radius: 0.25rem;
   border-color: transparent;
   color: white;
-  background: hsl(360, 71%, 66%);
+  background: rgb(248, 127, 127);
   cursor: pointer;
   transition: all 0.3s linear;
   outline: none;
@@ -125,7 +89,7 @@ Stripe Styles
 }
 
 .signin-btn:hover {
-  background: rgb(248, 127, 127);
+  background: hsl(360, 71%, 66%);
 }
 
 .active {

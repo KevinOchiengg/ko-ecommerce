@@ -49,7 +49,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to='/cart'
+              to='/payment'
               className='link-btn'
               activeClassName='active'
               isActive={checkActive}
@@ -71,7 +71,7 @@ const Navbar = () => {
               src={cart}
               alt='cart'
               className='cart'
-              onClick={(e) => history.push('/Cart')}
+              onClick={(e) => history.push('/cart')}
             />
 
             <div className='amount-container'>
