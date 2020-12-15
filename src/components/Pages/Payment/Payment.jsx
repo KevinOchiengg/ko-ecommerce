@@ -4,7 +4,6 @@ import Footer from '../../Footer/Footer';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from '../../../StateProvider';
 import { getBasketTotal } from '../../../reducer';
-
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import axios from 'axios';
 
