@@ -18,7 +18,8 @@
     "express": "^4.17.1",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0",
-    "stripe": "^8.128.0"
+    "stripe": "^8.128.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "^5.12.0",

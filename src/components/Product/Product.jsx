@@ -10,7 +10,7 @@ const Product = () => {
   return (
     <>
       {products.map((product) => {
-        const { image, title, price, rating, halfstar } = product;
+        const { id, image, title, price, rating, halfstar } = product;
 
         const addToBasket = () => {
           //dispatch the item into the data layer
@@ -18,15 +18,16 @@ const Product = () => {
           dispatch({
             type: 'ADD_TO_BASKET',
             item: {
-              title,
+              id: id,
               image: image,
+              title: title,
               price: price,
               rating: rating,
             },
           });
         };
         return (
-          <div className='col-3'>
+          <div key={title} className='col-3'>
             <Link to='/productdetails'>
               <img src={image} alt='' />
             </Link>

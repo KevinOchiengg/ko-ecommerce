@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import { useStateValue } from '../../StateProvider';
 
-const CheckoutProduct = ({ id, price, rating, value, title, image }) => {
+const CheckoutProduct = ({ id, image, title, price, rating, value }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
@@ -38,7 +38,6 @@ const CheckoutProduct = ({ id, price, rating, value, title, image }) => {
         </td>
         <td>${price}</td>
       </tr>
-      <button className='btn'>Checkout</button>
     </>
   );
 };

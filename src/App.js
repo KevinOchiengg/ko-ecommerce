@@ -15,10 +15,14 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Product from './components/Product/Product';
 import Payment from './components/Pages/Payment/Payment';
 import { products } from './data';
+// Make sure to call loadStripe outside of a component’s render to avoid
+// recreating the Stripe object on every render.
+// loadStripe is initialized with your real test publishable API key.
 
 const promise = loadStripe(
   'pk_test_51Hrf8PJNLaQB7IjEatkaccHHfMuozeQvdwLEHiNNtrqSaJTuV305bDdCqnYrFszE4QyxDa8w2gUh4VkJrmaMc5zd00AAKciwe5'
 );
+
 const App = () => {
   const [{}, dispatch] = useStateValue();
   useEffect(() => {

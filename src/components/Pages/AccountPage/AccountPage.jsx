@@ -90,7 +90,7 @@ const AccountPage = () => {
                   <button type='submit' className='btn ' onClick={signIn}>
                     Login
                   </button>
-                  <Link to=''>Forgot password</Link>
+                  <Link to=''>Forgot password?</Link>
                 </form>
                 <form
                   action=''

@@ -6,10 +6,11 @@ import { useStateValue } from '../../../StateProvider';
 import { getBasketTotal } from '../../../reducer';
 import CheckoutProduct from '../../CheckoutProduct/CheckoutProduct';
 import EmptyCart from '../../EmptyCart/EmptyCart';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const ShoppingCart = () => {
   const [{ basket }] = useStateValue();
+  const history = useHistory();
 
   if (basket.length < 1) return <EmptyCart />;
   return (
@@ -25,12 +26,12 @@ const ShoppingCart = () => {
           </tbody>
           {basket.map((item) => (
             <CheckoutProduct
+              key={item.id}
               id={item.id}
-              title={item.title}
-              rating={item.rating}
-              price={item.price}
-              value={item.value}
               image={item.image}
+              title={item.title}
+              price={item.price}
+              rating={item.rating}
             />
           ))}
         </table>
@@ -57,9 +58,13 @@ const ShoppingCart = () => {
             thousandSeparator={true}
             prefix={'$'}
           />
-          <Link to='/payment' className='checkout-btn btn'>
+
+          <button
+            onClick={(e) => history.push('/payment')}
+            className='checkout-btn btn'
+          >
             Checkout &#8594;
-          </Link>
+          </button>
         </div>
       </div>
       <Footer />
