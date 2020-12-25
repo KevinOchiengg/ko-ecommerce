@@ -1,5 +1,4 @@
 .header {
-  margin-top: 4rem;
   width: 100%;
   background: radial-gradient(#fff, #ffd6d6);
 }
@@ -16,6 +15,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 60px;
 }
 
 .col-2 {
@@ -32,15 +32,6 @@
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
-}
-
-.header {
-  width: 100%;
-  background: radial-gradient(#fff, rgb(253, 208, 208));
-}
-
-.header .row {
-  margin-top: 70px;
 }
 
 .menu-icon {

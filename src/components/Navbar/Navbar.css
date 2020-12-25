@@ -1,30 +1,36 @@
 .nav {
-  background: #fff;
-  width: 100%;
   height: 4rem;
+  background: #fff;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  z-index: 10;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
 }
 .nav-center {
-  height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  position: relative;
-  justify-content: space-between;
+  width: 90vw;
+  max-width: 1170px;
+}
+
+.nav-links {
+  display: none;
+}
+.signin-btn {
+  display: none;
 }
 
 .nav-logo {
-  width: 160px;
-  object-fit: contain;
-  margin-left: -10px;
+  height: 60px;
 }
 
-.toggle-btn {
-  margin-right: 20px;
+.cart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .cart {
@@ -45,11 +51,7 @@
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-.nav-links {
-  display: none;
-  height: 100%;
+  justify-content: flex-end;
 }
 
 .nav-container {
@@ -75,28 +77,54 @@
   font-size: 12px;
 }
 
-.signin-btn {
-  font-size: 0.7rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.25rem;
-  border-color: transparent;
-  color: white;
-  background: rgb(248, 127, 127);
-  cursor: pointer;
-  transition: all 0.3s linear;
-  outline: none;
-  margin-right: 10px;
-}
-
 .signin-btn:hover {
   background: hsl(360, 71%, 66%);
 }
 
-.active {
-  color: yellow;
-}
-/* nav media query */
 @media screen and (min-width: 800px) {
+  .nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-center {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .nav-logo {
+    height: 80px;
+  }
+  .signin-btn {
+    display: inline-block;
+  }
+  .nav-links {
+    display: block;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .nav-links li {
+    height: 100%;
+  }
+  .link-btn {
+    height: 100%;
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.1rem;
+    color: #222;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 6rem;
+  }
   .right__item {
     display: flex;
   }
@@ -110,26 +138,15 @@
     object-fit: contain;
   }
 
-  .signin-btn {
-    font-size: 1rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 0.25rem;
-    border-color: transparent;
-    color: white;
-    background: hsl(360, 71%, 66%);
-    cursor: pointer;
-    transition: all 0.3s linear;
-    outline: none;
-  }
   .cart {
-    margin-right: 20px;
+    margin-left: 10px;
     width: 35px;
     height: 35px;
   }
   .amount-container {
     position: absolute;
-    top: -0.5rem;
-    right: 0.2rem;
+    top: -0.6rem;
+    right: -0.6rem;
     width: 1.5rem;
     height: 1.5rem;
   }

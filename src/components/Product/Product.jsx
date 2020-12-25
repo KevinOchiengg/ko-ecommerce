@@ -13,21 +13,21 @@ const Product = () => {
         const { id, image, title, price, rating, halfstar } = product;
 
         const addToBasket = () => {
-          //dispatch the item into the data layer
-
+          // dispatch the item into the data layer
           dispatch({
             type: 'ADD_TO_BASKET',
             item: {
               id: id,
-              image: image,
               title: title,
+              image: image,
               price: price,
               rating: rating,
             },
           });
         };
+
         return (
-          <div key={title} className='col-3'>
+          <div key={id} className='col-3'>
             <Link to='/productdetails'>
               <img src={image} alt='' />
             </Link>

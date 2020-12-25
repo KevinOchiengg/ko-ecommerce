@@ -1,28 +1,62 @@
-import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
 import React from 'react';
-export const sublinks = [
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaPinterestP,
+  FaHome,
+  FaProductHunt,
+  FaCcVisa,
+  FaRegUser,
+} from 'react-icons/fa';
+
+export const links = [
   {
-    page: 'Home',
-    links: [
-      { label: 'Home', icon: <FaCreditCard />, url: '/' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/' },
-    ],
+    id: 1,
+    url: '/',
+    text: 'home',
+    icon: <FaHome />,
   },
   {
-    page: 'Products',
-    links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
-    ],
+    id: 2,
+    url: '/products',
+    text: 'Products',
+    icon: <FaProductHunt />,
   },
   {
-    page: 'Account',
-    links: [
-      { label: 'Account', icon: <FaBriefcase />, url: '/account' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/account' },
-    ],
+    id: 3,
+    url: '/payment',
+    text: ' Checkout',
+    icon: <FaCcVisa />,
+  },
+  {
+    id: 4,
+    url: '/payment',
+    text: 'Login',
+    icon: <FaRegUser />,
+  },
+];
+
+export const social = [
+  {
+    id: 1,
+    url: 'https://www.facebook.com/Swag-Mode-100392718038597',
+    icon: <FaFacebookF />,
+  },
+  {
+    id: 2,
+    url: 'https://www.facebook.com/Swag-Mode-100392718038597',
+    icon: <FaTwitter />,
+  },
+
+  {
+    id: 3,
+    url: 'https://www.facebook.com/Swag-Mode-100392718038597',
+    icon: <FaInstagram />,
+  },
+  {
+    id: 4,
+    url: 'https://www.facebook.com/Swag-Mode-100392718038597',
+    icon: <FaPinterestP />,
   },
 ];
