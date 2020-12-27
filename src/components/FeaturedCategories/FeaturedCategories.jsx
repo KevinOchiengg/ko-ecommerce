@@ -1,10 +1,7 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import './FeaturedCategories.css';
-import { products } from '../../data';
 import { useStateValue } from '../../StateProvider';
-import Product from '../Product/Product';
+import Products from '../Product/Products';
 
 const FeaturedCategories = () => {
   const [{ basket }, dispatch] = useStateValue();
@@ -12,7 +9,7 @@ const FeaturedCategories = () => {
     <div className='categories'>
       <div className='small-container'>
         <div className='row'>
-          <Product />
+          <Products />
         </div>
       </div>
     </div>

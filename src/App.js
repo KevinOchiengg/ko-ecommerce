@@ -12,7 +12,6 @@ import { loadStripe } from '@stripe/stripe-js';
 import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
-import Product from './components/Product/Product';
 import Payment from './components/Pages/Payment/Payment';
 
 const promise = loadStripe(
@@ -64,9 +63,6 @@ const App = () => {
         </Route>
         <Route path='/productdetails'>
           <ProductDetails />
-        </Route>
-        <Route exact path='/products'>
-          <Product />
         </Route>
         <Route path='*'>
           <ErrorPage />

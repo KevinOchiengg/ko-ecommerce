@@ -16,7 +16,7 @@ const CheckoutProduct = ({ id, image, title, price, rating, value }) => {
             <img src={image} alt='' />
             <div>
               <p>{title}</p>
-              <small>Price: ${price}</small>
+              <small>Price: Ksh {price}</small>
               <div className='rating'>
                 {Array(rating)
                   .fill()
@@ -36,7 +36,7 @@ const CheckoutProduct = ({ id, image, title, price, rating, value }) => {
         <td>
           <input type='number' value={value} />
         </td>
-        <td>${price}</td>
+        <td>Ksh {price}</td>
       </tr>
     </>
   );

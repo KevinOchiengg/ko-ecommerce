@@ -42,7 +42,7 @@ const ProductDetails = () => {
           <div className='col-2'>
             <p>Home/ T-shirt</p>
             <h1>Read Printed T-shirt by HRX</h1>
-            <h4>$50.00</h4>
+            <h4>Ksh 600.00</h4>
             <select>
               <option>Select Size</option>
               <option>XXL</option>

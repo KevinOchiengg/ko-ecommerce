@@ -56,7 +56,7 @@ const ShoppingCart = () => {
             value={getBasketTotal(basket)}
             displayType={'text'}
             thousandSeparator={true}
-            prefix={'$'}
+            prefix={'Ksh'}
           />
 
           <button

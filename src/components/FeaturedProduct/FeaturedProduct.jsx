@@ -1,5 +1,5 @@
 import React from 'react';
-import Product from '../Product/Product';
+import Products from '../Product/Products';
 import './FeaturedProduct.css';
 
 function FeaturedProduct() {
@@ -7,7 +7,7 @@ function FeaturedProduct() {
     <div className='small-container'>
       <h2 className='title'>Featured Products</h2>
       <div className='row'>
-        <Product />
+        <Products />
       </div>
     </div>
   );

@@ -1,16 +1,16 @@
 import React from 'react';
-import Product from '../../Product/Product';
 import Footer from '../../Footer/Footer';
 import Navbar from '../../Navbar/Navbar';
 import Sidebar from '../../Sidebar/Sidebar';
 import './ProductPage.css';
+import Products from '../../Product/Products';
 
 const ProductPage = () => {
   return (
     <>
       <Navbar />
       <Sidebar />
-      <div className='row row-2'>
+      <section className='row row-2'>
         <h2>All Products</h2>
         <select>
           <option>Default</option>
@@ -19,10 +19,10 @@ const ProductPage = () => {
           <option>Sort by rating</option>
           <option>Sort by sales</option>
         </select>
-      </div>
-      <div className='small-container'>
+      </section>
+      <section className='small-container'>
         <div className='row'>
-          <Product />
+          <Products />
         </div>
         <div className='page-btn'>
           <span>1</span>
@@ -31,7 +31,7 @@ const ProductPage = () => {
           <span>4</span>
           <span>&#8594;</span>
         </div>
-      </div>
+      </section>
       <Footer />
     </>
   );
