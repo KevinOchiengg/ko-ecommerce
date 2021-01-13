@@ -10,19 +10,34 @@ import gallery2 from '../../images/gallery-2.jpg';
 import gallery3 from '../../images/gallery-3.jpg';
 import gallery4 from '../../images/gallery-6.png';
 import './ProductDetails.css';
-import Navbar from '../Navbar/Navbar';
-import Sidebar from '../Sidebar/Sidebar';
 import { Link } from 'react-router-dom';
+import { products } from '../../data';
+import { useStateValue } from '../../StateProvider';
 
 const ProductDetails = () => {
+  const [{ basket }, dispatch] = useStateValue();
+  const { id, image, title, description, price, rating, halfstar } = products;
+  const addToBasket = () => {
+    // dispatch the item into the data layer
+    dispatch({
+      type: 'ADD_TO_BASKET',
+      item: {
+        id: id,
+        image: image,
+        title: title,
+        description: description,
+        rating: rating,
+        price: price,
+      },
+    });
+  };
+
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <div className='small-container single__product'>
         <div className='row'>
           <div className='col-2'>
-            <img src={gallery1} alt='' id='product__img' />
+            <img src={image} alt='' id='product__img' />
 
             <div className='small__img__row'>
               <div className='small__img__col'>
@@ -42,7 +57,7 @@ const ProductDetails = () => {
           <div className='col-2'>
             <p>Home/ T-shirt</p>
             <h1>Read Printed T-shirt by HRX</h1>
-            <h4>Ksh 600.00</h4>
+            <h4>Ksh {price}</h4>
             <select>
               <option>Select Size</option>
               <option>XXL</option>
@@ -52,21 +67,22 @@ const ProductDetails = () => {
               <option>Small</option>
             </select>
             <input type='number' value='1' />
-            <button to='cart' className='btn'>
+            <button to='cart' className='btn' onClick={addToBasket}>
               Add to cart
             </button>
             <h3>
               Product Details
-              <i>
-                <FaStar />
-              </i>
+              <div className='rating'>
+                {Array(rating)
+                  .fill()
+                  .map((_, i) => (
+                    <i>{<FaStar />}</i>
+                  ))}
+                <i>{halfstar}</i>
+              </div>
             </h3>
             <br />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum,
-              excepturi! Modi, quaerat iusto! Repellat eveniet officiis
-              explicabo adipisci obcaecati non?
-            </p>
+            <p>{description}</p>
           </div>
         </div>
       </div>

@@ -26,10 +26,11 @@ const Products = () => {
             type: 'ADD_TO_BASKET',
             item: {
               id: id,
-              title: title,
               image: image,
-              price: price,
+              title: title,
+              description: description,
               rating: rating,
+              price: price,
             },
           });
         };
@@ -38,7 +39,7 @@ const Products = () => {
           <div className='col-3 product-item'>
             <figure>
               <Link to='/productdetails'>
-                <img src={image} alt='Image' className='img-fluid' />
+                <img src={image} alt='Product' className='img-fluid' />
               </Link>
             </figure>
 
