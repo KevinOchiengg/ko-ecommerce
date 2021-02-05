@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import { useStateValue } from '../../StateProvider';
+import './CheckoutProduct.css';
 
 const CheckoutProduct = ({
   id,
@@ -22,7 +23,7 @@ const CheckoutProduct = ({
         <td>
           <div className='cart-info'>
             <img src={image} alt='' />
-            <div>
+            <div className='checkout-items'>
               <p>{title}</p>
               <small>Price: Ksh {price}</small>
               <div className='rating'>

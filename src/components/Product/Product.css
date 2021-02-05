@@ -1,6 +1,10 @@
 .product-item {
   text-align: center;
 }
+
+.col-3.product-item {
+  margin-bottom: 80px;
+}
 .product-item figure {
   overflow: hidden;
   position: relative;
@@ -21,11 +25,17 @@
 
 .product-item h3,
 .rating {
+  color: #ffd741;
   margin-bottom: 10px;
 }
 
+.product-item h3 a {
+  color: #24324a;
+  transition: 0.3s all ease;
+}
+
 .product-item h3 a:hover {
-  color: #f16821;
+  color: #ffd741;
 }
 
 .product-item p {
@@ -58,8 +68,12 @@
   margin-top: 20px;
 }
 .buttons__container button a {
-  color: #fff;
+  color: #24324a;
 }
 .buttons__container .btn {
   margin: 0 10px;
+}
+
+.rating i {
+  color: #ffd741;
 }

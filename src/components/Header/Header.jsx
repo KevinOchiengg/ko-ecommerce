@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import headerImage from '../../images/gallery-3.png';
+import headerImage from '../../images/product-4.png';
 import './Header.css';
 
 const Header = () => {
@@ -10,10 +10,13 @@ const Header = () => {
         <div className='row'>
           <div className='hero__text col-2'>
             <h1>
-              Switch Your Swag <br />
-              Mode On
+              Welcome To <span>Integro</span> <br />
+              Wears
             </h1>
-            <p>Dress like you already famous</p>
+            <p>
+              Switch Your Swag Mode On
+              <br /> & Dress like you already famous
+            </p>
             <Link to='/products' className='btn'>
               Explore Now &#8594;
             </Link>

@@ -19,7 +19,6 @@ const AppProvider = ({ children }) => {
   const checkActive = () => {
     setIsActive(true);
   };
-
   return (
     <AppContext.Provider
       value={{

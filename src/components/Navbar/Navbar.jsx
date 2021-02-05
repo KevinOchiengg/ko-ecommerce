@@ -1,8 +1,8 @@
 import React from 'react';
+import { FaAlignRight } from 'react-icons/fa';
+import { IoIosBasket } from 'react-icons/io';
 import logo from '../../images/logo.png';
 import { useGlobalContext } from '../../context';
-import cart from '../../images/cart.png';
-import menu from '../../images/menu.png';
 import './Navbar.css';
 import { Link, useHistory } from 'react-router-dom';
 import { useStateValue } from '../../StateProvider';
@@ -53,10 +53,11 @@ const Navbar = () => {
           </Link>
 
           <div className='nav-container'>
-            <img
-              src={cart}
-              alt='cart'
+            <IoIosBasket
               className='cart'
+              style={{
+                fontSize: '25px',
+              }}
               onClick={(e) => history.push('/cart')}
             />
 
@@ -64,83 +65,16 @@ const Navbar = () => {
               <p>{basket?.length}</p>
             </div>
           </div>
-          <img
-            src={menu}
-            alt='menu'
+          <FaAlignRight
             className='toggle-btn'
-            style={{ width: '20px', height: '20px' }}
+            style={{
+              fontSize: '25px',
+            }}
             onClick={openSidebar}
           />
         </div>
       </div>
     </nav>
-    // <nav className='nav'>
-    //   <div className='nav-center'>
-    //     <NavLink to='/'>
-    //       <img src={logo} className='nav-logo' alt='' />
-    //     </NavLink>
-    //     <ul className='nav-links'>
-    //       <li>
-    //         <NavLink
-    //           to='/'
-    //           className='link-btn'
-    //           activeClassName='active'
-    //           isActive={checkActive}
-    //         >
-    //           Home
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink
-    //           to='/Products'
-    //           className='link-btn'
-    //           activeClassName='active'
-    //           isActive={checkActive}
-    //         >
-    //           products
-    //         </NavLink>
-    //       </li>
-    //       <li>
-    //         <NavLink
-    //           to='/payment'
-    //           className='link-btn'
-    //           activeClassName='active'
-    //           isActive={checkActive}
-    //         >
-    //           Checkout
-    //         </NavLink>
-    //       </li>
-    //     </ul>
-
-    //     <div className='right__item'>
-    //       <NavLink to={!user && '/account'}>
-    //         <button className='signin-btn' onClick={handleAuthentication}>
-    //           {user ? 'Log out' : 'Log in'}
-    //         </button>
-    //       </NavLink>
-
-    //       <div className='nav-container'>
-    //         <img
-    //           src={cart}
-    //           alt='cart'
-    //           className='cart'
-    //           onClick={(e) => history.push('/cart')}
-    //         />
-
-    //         <div className='amount-container'>
-    //           <p>{basket?.length}</p>
-    //         </div>
-    //       </div>
-    //       <img
-    //         src={menu}
-    //         alt='menu'
-    //         className='toggle-btn'
-    //         style={{ width: '20px', height: '20px' }}
-    //         onClick={openSidebar}
-    //       />
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 

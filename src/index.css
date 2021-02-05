@@ -16,7 +16,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .container {
@@ -31,8 +31,8 @@ p {
 
 .btn {
   display: inline-block;
-  background: rgb(248, 127, 127);
-  color: #fff;
+  background: #ffd741;
+  color: #1a1400;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
@@ -42,6 +42,37 @@ p {
   border: none;
 }
 
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after {
+  content: '';
+  background: #ffd741;
+  height: 5px;
+  width: 80px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
 .btn:hover {
-  background: hsl(360, 71%, 66%);
+  background: #ffcf1a;
+}
+
+.ben {
+  background: #060500 #1a1400 #2d2400 #413300 #554300 #685200 #7c6200 #8f7100
+    #a38100 #b79000 #caa000 #deaf00 #f2bf00 Shade Color Variation #ffcb06
+    #c0baa4 #fff8de;
 }

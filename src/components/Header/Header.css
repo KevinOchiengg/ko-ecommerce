@@ -1,6 +1,15 @@
 .header {
+  font-family: 'Playfair Display', serif;
   width: 100%;
-  background: radial-gradient(#fff, #ffd6d6);
+  background: linear-gradient(
+      0deg,
+      rgba(39, 55, 85, 0.7),
+      rgba(39, 55, 85, 0.7)
+    ),
+    url(../../images/moses.jpg) no-repeat center;
+  background-size: cover;
+  background-position: center bottom;
+  object-fit: cover;
 }
 
 .container {
@@ -8,6 +17,10 @@
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.hero__text span {
+  color: yellow;
 }
 
 .row {
@@ -32,6 +45,12 @@
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
+  color: #fffcf2;
+}
+
+.hero__text p {
+  color: #fffcf2;
+  letter-spacing: 1px;
 }
 
 .menu-icon {

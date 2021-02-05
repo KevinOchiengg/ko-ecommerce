@@ -1,17 +1,21 @@
 .nav {
-  height: 4rem;
-  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background: #24324a;
+  border-bottom: 2px solid #ffd741;
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   z-index: 1;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
 }
 .nav-center {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  height: 100%;
   width: 90vw;
   max-width: 1170px;
 }
@@ -24,18 +28,12 @@
 }
 
 .nav-logo {
-  height: 60px;
+  height: 80px;
 }
 
 .cart {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.cart {
-  width: 20px;
-  height: 20px;
+  font-size: 25px;
+  color: #fff8de;
   cursor: pointer;
 }
 
@@ -67,26 +65,27 @@
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  background: hsl(360, 71%, 66%);
+  background: #ffcf1a;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .amount-container p {
-  color: #fff;
+  color: #24324a;
   font-size: 12px;
 }
 
 .signin-btn:hover {
-  background: hsl(360, 71%, 66%);
+  background: #ffd32d;
+}
+
+.toggle-btn {
+  color: #fff8de;
 }
 
 @media screen and (min-width: 800px) {
   .nav {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 6rem;
   }
   .nav-center {
     display: grid;
@@ -94,10 +93,11 @@
     align-items: center;
   }
   .toggle-btn {
+    color: #fffcf2;
     display: none;
   }
   .nav-logo {
-    height: 80px;
+    height: 100px;
   }
   .signin-btn {
     display: inline-block;
@@ -115,6 +115,7 @@
   .nav-links li {
     height: 100%;
   }
+
   .link-btn {
     height: 100%;
     background: transparent;
@@ -125,12 +126,17 @@
     letter-spacing: 1px;
     width: 6rem;
   }
+
+  .link-btn a {
+    transition: all 0.6s linear;
+  }
+
+  .link-btn a:hover {
+    color: #ffd741;
+  }
+
   .right__item {
     display: flex;
-  }
-  .toggle-btn {
-    margin-right: 20px;
-    display: none;
   }
 
   .nav-logo {
@@ -167,7 +173,7 @@
   }
   .link-btn {
     font-size: 1.1rem;
-    color: black;
+    color: #fffcf2;
     text-transform: capitalize;
     letter-spacing: 1px;
   }
