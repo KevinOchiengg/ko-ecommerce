@@ -103,8 +103,8 @@
   }
 
   .hero__container h1 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 48px;
+    line-height: 48px;
     margin: 25px 0;
     color: #fffcf2;
   }
@@ -127,36 +127,4 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .row {
-    text-align: center;
-  }
-
-  .col-2,
-  .col-3,
-  .col-4 {
-    flex-basis: 100%;
-  }
-
-  .hero__container h1 {
-    font-size: 40px;
-    line-height: 40px;
-    margin: 25px 0;
-    color: #fffcf2;
-  }
-
-  .hero__container .btn {
-    font-size: 12px;
-  }
-
-  .hero__container p {
-    font-size: 16px;
-    line-height: 20px;
-    color: #fffcf2;
-    letter-spacing: 1px;
-  }
-
-  .hero {
-    top: 5rem;
-    height: 95vh;
-  }
 }

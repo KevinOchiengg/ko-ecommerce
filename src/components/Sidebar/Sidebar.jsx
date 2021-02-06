@@ -1,6 +1,5 @@
 import React from 'react';
 import { IoIosArrowRoundBack } from 'react-icons/io';
-import logo from '../../images/logo.png';
 import { useGlobalContext } from '../../context';
 import './Sidebar.css';
 

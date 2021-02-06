@@ -20,8 +20,8 @@ const ExclusiveProduct = () => {
                 Printed Hoodie<span>.</span>
               </h1>
               <p>
-                Men / Women Singer Hooded Sweatshirts Plus Size Unisex
-                Pullover3D Printed Hoodie
+                Men / Women Singer Hooded | Sweatshirts Plus Size | Unisex
+                Pullover3D | Printed Hoodie
               </p>
               <Link to='productdetails' className='btn'>
                 Buy Now &#8594;

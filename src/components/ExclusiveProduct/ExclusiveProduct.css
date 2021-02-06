@@ -17,24 +17,30 @@
 }
 
 .offer p {
+  font-size: 22px;
+  letter-spacing: 1px;
   color: #fffcf2;
+  margin: 0;
+}
+
+.offer .btn {
+  font-size: 24px;
+}
+
+.offer .col-2 h1 span {
+  color: #ffd741;
 }
 
 @media only screen and (max-width: 800px) {
   .offer .col-2 p {
     font-size: 14px;
     color: #fffcf2;
-    letter-spacing: 1px;
     line-height: 20px;
   }
   .offer .col-2 h1 {
     font-size: 36px;
     color: #fffcf2;
     letter-spacing: 1px;
-  }
-
-  .offer .col-2 h1 span {
-    color: #ffd741;
   }
 }
 
