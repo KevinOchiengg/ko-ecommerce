@@ -3,14 +3,15 @@
   align-items: center;
   justify-content: center;
   height: 5rem;
+  width: 100%;
   background: #24324a;
   border-bottom: 2px solid #ffd741;
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
   z-index: 1;
 }
+
 .nav-center {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -24,6 +25,8 @@
   display: none;
 }
 .signin-btn {
+  font-size: 18px;
+  color: rgba(39, 55, 85);
   display: none;
 }
 

@@ -62,7 +62,12 @@
 }
 
 .copyright {
+  padding-bottom: 20px;
   text-align: center;
+}
+
+.copyright a {
+  color: #8aabca;
 }
 
 .footer-col-1 input[type='text'] {

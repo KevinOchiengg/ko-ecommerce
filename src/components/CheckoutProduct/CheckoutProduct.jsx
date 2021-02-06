@@ -25,7 +25,7 @@ const CheckoutProduct = ({
             <img src={image} alt='' />
             <div className='checkout-items'>
               <p>{title}</p>
-              <small>Price: Ksh {price}</small>
+              <p>Price: Ksh {price}</p>
               <div className='rating'>
                 {Array(rating)
                   .fill()
@@ -36,7 +36,11 @@ const CheckoutProduct = ({
                   <FaStarHalfAlt />
                 </i>
               </div>
-              {!hideButton && <button className='btn'>Remove</button>}
+              {!hideButton && (
+                <button className='btn' onClick={removeFromBasket}>
+                  Remove
+                </button>
+              )}
             </div>
           </div>
         </td>

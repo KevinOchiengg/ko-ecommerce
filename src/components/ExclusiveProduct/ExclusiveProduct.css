@@ -1,13 +1,42 @@
 .offer {
-  background: radial-gradient(#fff, #ffd741);
-  margin-top: 80px;
-  padding: 30px 0;
+  background: linear-gradient(
+      0deg,
+      rgba(39, 55, 85, 0.7),
+      rgba(39, 55, 85, 0.7)
+    ),
+    url(../../images/product-18.jpg);
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Playfair Display', serif;
 }
 
 .col-2 .offer-img {
   padding: 50px;
 }
 
-small {
-  color: #555;
+.offer p {
+  color: #fffcf2;
+}
+
+@media only screen and (max-width: 800px) {
+  .offer .col-2 p {
+    font-size: 14px;
+    color: #fffcf2;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+  .offer .col-2 h1 {
+    font-size: 36px;
+    color: #fffcf2;
+    letter-spacing: 1px;
+  }
+
+  .offer .col-2 h1 span {
+    color: #ffd741;
+  }
+}
+
+@media only screen and (max-width: 600px) {
 }
