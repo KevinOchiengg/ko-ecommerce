@@ -1,9 +1,7 @@
 .cart-page {
   margin: 160px auto;
 }
-/* #ffd741;
 
-    background-color: #f2f2f2;*/
 table {
   width: 100%;
   border-collapse: collapse;
@@ -13,9 +11,6 @@ table {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
-}
-
-table {
 }
 
 th {
@@ -74,9 +69,6 @@ th:last-child {
 }
 
 @media only screen and (max-width: 600px) {
-  .cart-info p {
-    display: none;
-  }
   .total-price {
     margin-left: 0px;
   }

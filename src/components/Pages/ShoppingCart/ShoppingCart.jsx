@@ -15,7 +15,7 @@ const ShoppingCart = () => {
   if (basket.length < 1) return <EmptyCart />;
   return (
     <>
-      <div className='small-container cart-page'>
+      <div className=' cart-page'>
         <table>
           <tbody>
             <tr>

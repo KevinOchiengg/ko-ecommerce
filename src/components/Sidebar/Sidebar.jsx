@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTimes } from 'react-icons/fa';
+import { IoIosArrowRoundBack } from 'react-icons/io';
 import logo from '../../images/logo.png';
 import { useGlobalContext } from '../../context';
 import './Sidebar.css';
@@ -13,9 +13,13 @@ const Sidebar = () => {
   return (
     <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
       <div className='sidebar-header'>
-        <img src={logo} className='logo' alt='looqu' />
+        <div className='brand-name'>
+          <h5>
+            Integro<span>.</span>
+          </h5>
+        </div>
         <button className='close-btn' onClick={closeSidebar}>
-          <FaTimes />
+          <IoIosArrowRoundBack />
         </button>
       </div>
       <ul className='links'>
