@@ -27,7 +27,7 @@ function Testimonial() {
 
   return (
     <section className='section'>
-      <h2 className='title'>Featured Products</h2>
+      <h2 className='title'>Testimonials</h2>
       <div className='section-center'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person;

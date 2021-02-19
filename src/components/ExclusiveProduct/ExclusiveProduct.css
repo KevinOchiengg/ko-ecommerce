@@ -24,7 +24,8 @@
 }
 
 .offer .btn {
-  font-size: 24px;
+  font-size: 20px;
+  color: #24324a;
 }
 
 .offer .col-2 h1 span {
@@ -41,6 +42,9 @@
     font-size: 36px;
     color: #fffcf2;
     letter-spacing: 1px;
+  }
+  .offer .btn {
+    font-size: 12px;
   }
 }
 
