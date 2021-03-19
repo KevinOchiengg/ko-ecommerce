@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import offer from '../../images/product-4.png';
+import offer from '../../images/hood4.png';
 import './ExclusiveProduct.css';
 
 const ExclusiveProduct = () => {

@@ -12,7 +12,7 @@
       rgba(39, 55, 85, 0.7),
       rgba(39, 55, 85, 0.7)
     ),
-    url(../../images/product-16.jpg);
+    url(../../images/hero.jpg);
   -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,4 +127,8 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .account-page {
+    top: 5rem;
+    height: 95vh;
+  }
 }

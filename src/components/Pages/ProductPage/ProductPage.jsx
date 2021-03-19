@@ -8,8 +8,6 @@ import Products from '../../Product/Products';
 const ProductPage = () => {
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <section className='row row-2'>
         <h2>All Products</h2>
         <select>

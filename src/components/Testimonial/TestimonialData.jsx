@@ -6,34 +6,34 @@ const people = [
   {
     id: 1,
     image: userOne,
-    name: 'Javan Omondi',
-    title: 'Interior Designer',
+    name: 'James Kariuki',
+    title: 'Customer',
     quote:
-      'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+      'Integro wears is really amazing, i have been buying things from Integro, they are reliable and trustworthy, the best online store ever.',
   },
   {
     id: 2,
     image: userTwo,
-    name: 'Jose Doe',
+    name: 'Joseph Banda',
     title: 'Customer',
     quote:
-      'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+      'Excellent company and website. The products arrived on time and at a better price.',
   },
   {
     id: 3,
     image: userThree,
-    name: 'Helvy Anyango',
+    name: 'Geldine Kerubo',
     title: 'Designer',
     quote:
-      'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
+      'The best online chopping ever..were u can get all you need.. and quick shipping also.thanks to Integro',
   },
   {
     id: 4,
     image: userThree,
-    name: 'Marryann Adongo',
+    name: 'Mercy Anyona',
     title: 'Fashionist',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ',
+      'Integro is simply the BEST! Their prices are absolutely AFFORDABLE and their services are RELIABLE. ',
   },
 ];
 

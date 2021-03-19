@@ -1,14 +1,12 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
-import product1 from '../../images/product-1.png';
-import product2 from '../../images/product-2.png';
-import product3 from '../../images/product-3.png';
-import product4 from '../../images/product-4.png';
+import product18 from '../../images/Tshirt1.png';
+import product19 from '../../images/sweatpant2.png';
+import product20 from '../../images/Tshirts.png';
+import product21 from '../../images/shoe.jpg';
+import product22 from '../../images/airforce1.png';
+import product23 from '../../images/airforce2.png';
 import Footer from '../Footer/Footer';
-import gallery1 from '../../images/gallery-1.jpg';
-import gallery2 from '../../images/gallery-2.jpg';
-import gallery3 from '../../images/gallery-3.jpg';
-import gallery4 from '../../images/gallery-6.png';
 import './ProductDetails.css';
 import { Link } from 'react-router-dom';
 import { products } from '../../data';
@@ -37,20 +35,20 @@ const ProductDetails = () => {
       <div className='small-container single__product'>
         <div className='row'>
           <div className='col-2'>
-            <img src={image} alt='' id='product__img' />
+            <img src={product18} alt='' id='product__img' />
 
             <div className='small__img__row'>
               <div className='small__img__col'>
-                <img src={gallery1} alt='' />
+                <img src={product19} alt='' />
               </div>
               <div className='small__img__col'>
-                <img src={gallery2} alt='' />
+                <img src={product20} alt='' />
               </div>
               <div className='small__img__col'>
-                <img src={gallery3} alt='' />
+                <img src={product21} alt='' />
               </div>
               <div className='small__img__col'>
-                <img src={gallery4} alt='' />
+                <img src={product22} alt='' />
               </div>
             </div>
           </div>
@@ -96,7 +94,7 @@ const ProductDetails = () => {
         <div className='row'>
           <div className='col-4'>
             <Link to='productdetails'>
-              <img src={product1} alt='' />
+              <img src={product18} alt='' />
             </Link>
             <h4>Red Printed T-shirt</h4>
             <div className='rating'>
@@ -120,7 +118,7 @@ const ProductDetails = () => {
           </div>
           <div className='col-4'>
             <Link to='productdetails'>
-              <img src={product2} alt='' />
+              <img src={product19} alt='' />
             </Link>
             <h4>Black shoes</h4>
             <div className='rating'>
@@ -144,7 +142,7 @@ const ProductDetails = () => {
           </div>
           <div className='col-4'>
             <Link to='productdetails'>
-              <img src={product3} alt='' />
+              <img src={product20} alt='' />
             </Link>
             <h4>Grey Trouser</h4>
             <div className='rating'>
@@ -168,7 +166,7 @@ const ProductDetails = () => {
           </div>
           <div className='col-4'>
             <Link to='productdetails'>
-              <img src={product4} alt='' />
+              <img src={product21} alt='' />
             </Link>
             <h4>Blue Printed T-shirt</h4>
             <div className='rating'>
