@@ -1,17 +1,13 @@
-.brand {
-  margin: 100px auto;
+.ad-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
 }
 
-.col-5 {
-  width: 160px;
-}
-
-.col-5 img {
-  width: 100%;
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-.col-5 img:hover {
-  filter: grayscale(0);
+@media screen and (max-width: 800px) {
+  .ad-section img {
+    padding: 0 30px;
+    width: 340px;
+  }
 }
